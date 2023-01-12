@@ -1,0 +1,3 @@
+/mnt/c/Y2/Q2/APC/2/Asign2/cmake-build-debug/CMakeFiles/Asign2.dir
+/mnt/c/Y2/Q2/APC/2/Asign2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Y2/Q2/APC/2/Asign2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
