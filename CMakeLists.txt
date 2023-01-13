@@ -3,4 +3,4 @@ project(Asign2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Asign2 main.cpp)
+add_executable(Asign2 main.cpp incl/some_file.h example.h)

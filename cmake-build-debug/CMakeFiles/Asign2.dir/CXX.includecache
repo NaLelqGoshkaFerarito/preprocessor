@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
+/mnt/c/Y2/Q2/APC/2/Asign2/incl/some_file.h
+
 /mnt/c/Y2/Q2/APC/2/Asign2/main.cpp
 iostream
 -
+incl/some_file.h
+/mnt/c/Y2/Q2/APC/2/Asign2/incl/some_file.h
 
