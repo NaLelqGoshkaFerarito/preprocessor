@@ -4,6 +4,7 @@
 
 #ifndef ASIGN2_SOME_FILE_H
 #define ASIGN2_SOME_FILE_H
+
 int simple_function(){
     return 42;
 }
