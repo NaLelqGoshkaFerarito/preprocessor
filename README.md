@@ -7,7 +7,6 @@ The C preprocessor (a.k.a. cpp) is a *macro processor* for C and C++ (you can us
 - Line control - The current file and line can be reported if needed
 - Diagnostics - Errors and warning can provide a better alternative to print debugging
 
-![](https://i.imgur.com/MmrBLoo.png)
 
 ## Basics
 
@@ -70,18 +69,18 @@ This doesn't even scratch the surface of what command-line arguments can do. For
 
 ## Macros
 
-In simp-le terms macros are the way in which we define a constant to be used multiple times throughout the program. Most of the time you can identify them by the "#define" at the beginning, for exapmle:
+In simp-le terms macros are the way in which we define a constant to be used multiple times throughout the program. Most of the time you can identify them by the "#define" at the beginning. Macros are pretty useful for embedded systems programming.
 
 ### Object-like macros
 usually these are used to simply store certain values like:
 ```cpp
-#define MAX_ARRAY_LENGTH 69 //noice
+#define MAX_ARRAY_LENGTH 69 
 ```
 this #define is actually a preprocessor directive supplied to your machine to store the value in ... this is in fact a better use of macros for reasons we will explain later on.
 
 
 ```cpp=
-#define MAX_ARRAY_LENGTH 69 //noice
+#define MAX_ARRAY_LENGTH 69 
 
 int main() {
     int noice = MAX_ARRAY_LENGTH;
@@ -99,7 +98,7 @@ If you want to see some more predefined macros (they are the main reason you nee
 
 ### Function-like macros
 
-but you can actually also use them for storing functions such as:
+Their syntax might look similar to object-like macros, but you can actually also use them for storing functions such as:
 
 ```cpp
 #define MAX_ARRAY_LENGTH(x) ((x)== 0 ? 1 : 69) //noice
@@ -124,9 +123,9 @@ this compiles as:
 
 ![](https://i.imgur.com/Mo2T9Cl.png)
 
-notice how warning does not display the answer but rather the string value, you can read more about this in the warning section below.
+Notice how warning does not display the answer but rather the string value, you can read more about this in the warning section below.
 
-but if you want the proper answer you can see it here:
+But if you want the proper answer you can see it here:
 
 ![](https://i.imgur.com/xDI02rG.png)
 
@@ -134,6 +133,7 @@ from
 
 ![](https://i.imgur.com/ZfLUd5L.png)
 
+With this freshly acquired knowledge you can make your embedded code much better. For more information that can be used in your embedded practice, we recommend reading stringizing (https://gcc.gnu.org/onlinedocs/cpp/Stringizing.html#Stringizing) and concatenation (https://gcc.gnu.org/onlinedocs/cpp/Concatenation.html#Concatenation)
 
 ## Conditionals
 Preprocessor conditionals are a lot like if statements. They are most often used if you want to exclude some code based on, for example, operating system or the hardware it is ran on.
